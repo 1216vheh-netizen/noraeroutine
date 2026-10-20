@@ -1,0 +1,4 @@
+{"label": "기존 방식(legacy)", "exit": 0, "wall_s": 135.0, "cpu_s": 142.4, "cpu_avg_cores": 1.05, "peak_rss_mb": 879}
+{"label": "개선 최종(final·화면4)", "exit": 0, "wall_s": 45.9, "cpu_s": 97.2, "cpu_avg_cores": 2.12, "peak_rss_mb": 2142}
+{"label": "개선 최종(final·화면2)", "exit": 0, "wall_s": 50.2, "cpu_s": 100.7, "cpu_avg_cores": 2.01, "peak_rss_mb": 1727}
+{"label": "빠른 시안(draft)", "exit": 0, "wall_s": 11.4, "cpu_s": 14.5, "cpu_avg_cores": 1.27, "peak_rss_mb": 1591}

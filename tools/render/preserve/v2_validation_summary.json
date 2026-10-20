@@ -1,0 +1,58 @@
+[
+ {
+  "run": "runs/sp60_legacy",
+  "all_pass": true,
+  "failed": []
+ },
+ {
+  "run": "runs/sp60_final",
+  "all_pass": true,
+  "failed": []
+ },
+ {
+  "run": "runs/sp60_final_p2",
+  "all_pass": true,
+  "failed": []
+ },
+ {
+  "run": "runs/sp60_draft",
+  "all_pass": true,
+  "failed": []
+ },
+ {
+  "run": "runs/smoke_final30",
+  "all_pass": true,
+  "failed": []
+ },
+ {
+  "run": "runs/smoke_draft30",
+  "all_pass": true,
+  "failed": []
+ },
+ {
+  "run": "runs/neg_bar",
+  "all_pass": false,
+  "failed": [
+   "진행 막대 위치"
+  ]
+ },
+ {
+  "run": "runs/neg_audio",
+  "all_pass": false,
+  "failed": [
+   "오디오 규격·길이",
+   "오디오·영상 싱크"
+  ]
+ },
+ {
+  "run": "runs/neg_drop",
+  "all_pass": false,
+  "failed": [
+   "프레임 수",
+   "영상 길이",
+   "오디오 규격·길이",
+   "진행 막대 위치",
+   "오디오·영상 싱크"
+  ]
+ }
+]

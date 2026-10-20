@@ -1,0 +1,18 @@
+{
+  "$comment": "노래루틴 캐릭터 클립 얼굴 위치 파일 형식 (설계안). 좌표는 클립 원본 픽셀 기준, placement로 릴스 화면(1080×1920) 좌표로 옮긴다.",
+  "type": "object",
+  "required": ["clip", "clipSha256", "fps", "size", "placement", "keyframes", "annotatedBy", "checkedBy"],
+  "properties": {
+    "clip": { "type": "string", "description": "클립 파일명" },
+    "clipSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "fps": { "type": "number" },
+    "size": { "type": "array", "items": { "type": "integer" }, "minItems": 2, "maxItems": 2, "description": "[가로, 세로]" },
+    "placement": { "type": "object", "required": ["x", "y", "scale"], "description": "릴스 화면에 놓는 위치(왼쪽 위)와 배율",
+      "properties": { "x": { "type": "number" }, "y": { "type": "number" }, "scale": { "type": "number", "exclusiveMinimum": 0 } } },
+    "keyframes": { "type": "array", "minItems": 2, "description": "0.5초 간격 이하로 기록, 사이는 직선 보간",
+      "items": { "type": "object", "required": ["t", "box"],
+        "properties": { "t": { "type": "number", "minimum": 0 }, "box": { "type": "array", "items": { "type": "number" }, "minItems": 4, "maxItems": 4, "description": "[x0, y0, x1, y1] 이마~턱, 양 볼 끝" } } } },
+    "annotatedBy": { "type": "string", "description": "manual(사람이 표시) 또는 사용한 도구 이름" },
+    "checkedBy": { "type": "string", "description": "얼굴 위치 표시를 확인한 사람" }
+  }
+}
